@@ -1,0 +1,51 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Run tests
+        run: dotnet test --no-build --configuration Release --verbosity normal
+
+      - name: Package observation points
+        run: |
+          dotnet run --project ObservationPointPacker/ObservationPointPacker.csproj --no-build --configuration Release -- ${{ github.ref_name }} ./release-output
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ github.ref_name }}
+          files: |
+            release-output/intensity-points.json
+            release-output/intensity-points-v1.mpk
+            release-output/intensity-points-v1.mpk.lz4
+            release-output/intensity-points-v1.json
+            release-output/intensity-points-v1.csv
+            release-output/intensity-points-v2.kmop
+          generate_release_notes: true
+          draft: true
+          prerelease: false
