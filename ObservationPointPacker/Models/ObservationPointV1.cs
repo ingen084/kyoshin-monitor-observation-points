@@ -41,7 +41,7 @@ public class ObservationPointV1 : IComparable
         using var stream = File.OpenWrite(path);
         using var writer = new StreamWriter(stream);
         foreach (var point in points)
-            writer.WriteLine($"{(int)point.Type},{point.Code},{point.IsSuspended},{point.Name},{point.Region},{point.Location.Latitude},{point.Location.Longitude},{point.Point?.X.ToString() ?? ""},{point.Point?.Y.ToString() ?? ""},{point.ClassificationId?.ToString() ?? ""},{point.PrefectureClassificationId?.ToString() ?? ""},{point.OldLocation?.Latitude ?? ""},{point.OldLocation?.Longitude ?? ""}");
+            writer.WriteLine($"{(int)point.Type},{point.Code},{point.IsSuspended},{point.Name},{point.Region},{point.Location.Latitude},{point.Location.Longitude},{point.Point?.X.ToString() ?? ""},{point.Point?.Y.ToString() ?? ""},{point.ClassificationId?.ToString() ?? ""},{point.PrefectureClassificationId?.ToString() ?? ""},{point.OldLocation?.Latitude.ToString() ?? ""},{point.OldLocation?.Longitude.ToString() ?? ""}");
     }
 
     // シリアライザ用コンストラクタのため警告を無効化する
