@@ -1,4 +1,7 @@
-﻿using System.Text.Json;
+﻿using System.Text.Encodings.Web;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.Text.Unicode;
 using ObservationPointPacker;
 using ObservationPointPacker.Models;
 
@@ -22,7 +25,11 @@ Console.WriteLine("intensity-points.jsonを読み込んでいます...");
 using var stream = File.OpenRead("intensity-points.json");
 var points = await JsonSerializer.DeserializeAsync<CommonObservationPoint[]>(stream, new JsonSerializerOptions
 {
-    PropertyNameCaseInsensitive = true,
+		PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
+		PropertyNameCaseInsensitive = true,
+		Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) },
+		Encoder = JavaScriptEncoder.Create(UnicodeRanges.All),
+		WriteIndented = true
 }) ?? throw new InvalidOperationException("データの読み込みに失敗しました");
 
 // V1形式に変換
