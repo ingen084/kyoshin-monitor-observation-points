@@ -35,8 +35,12 @@ var points = await JsonSerializer.DeserializeAsync<CommonObservationPoint[]>(str
 // V1形式に変換
 var v1Points = points.Select(p => p.ToV1()).ToArray();
 
-// V2形式に変換
-var v2Points = points.Select(p => p.ToV2()).ToArray();
+// V2形式に変換 (休止中または画像座標なしの観測点は除外)
+var v2Points = points
+    .Where(p => !p.IsSuspended && p.Point is not null)
+    .Select(p => p.ToV2())
+    .ToArray();
+Console.WriteLine($"  {points.Length}件中 {v2Points.Length}件をパッケージに含めます (除外: 休止中または画像座標なし)");
 
 var packedAt = DateTime.UtcNow;
 
