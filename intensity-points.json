@@ -14648,7 +14648,7 @@
         "y": 18
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -18067,7 +18067,7 @@
     },
     "point": {
       "center_point": {
-        "x": 232,
+        "x": 231,
         "y": 193
       },
       "offset": {
@@ -23561,7 +23561,16 @@
       "latitude": 45.511,
       "longitude": 141.9587
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 271,
+        "y": 18
+      },
+      "offset": {
+        "x": 1,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
