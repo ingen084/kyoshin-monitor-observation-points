@@ -2586,7 +2586,7 @@
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": -1
       }
     }
   },
@@ -3262,7 +3262,7 @@
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": 1
       }
     }
   },
@@ -3313,8 +3313,8 @@
         "y": 226
       },
       "offset": {
-        "x": 0,
-        "y": 0
+        "x": -1,
+        "y": 1
       }
     }
   },
@@ -5498,7 +5498,7 @@
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": -1
       }
     }
   },
@@ -10228,7 +10228,7 @@
         "y": 338
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -12490,7 +12490,7 @@
         "y": 322
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -12542,7 +12542,7 @@
         "y": 326
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -12802,7 +12802,7 @@
         "y": 279
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -13348,7 +13348,7 @@
         "y": 54
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -13843,7 +13843,7 @@
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": -1
       }
     }
   },
@@ -14492,7 +14492,7 @@
         "y": 263
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -16693,8 +16693,8 @@
         "y": 232
       },
       "offset": {
-        "x": 0,
-        "y": 0
+        "x": 1,
+        "y": 1
       }
     }
   },
@@ -16715,12 +16715,12 @@
     },
     "point": {
       "center_point": {
-        "x": 171,
-        "y": 237
+        "x": 170,
+        "y": 238
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": -1
       }
     }
   },
@@ -16745,8 +16745,8 @@
         "y": 237
       },
       "offset": {
-        "x": 0,
-        "y": 0
+        "x": 1,
+        "y": 1
       }
     }
   },
@@ -16772,7 +16772,7 @@
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": -1
       }
     }
   },
@@ -16927,7 +16927,7 @@
         "y": 308
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -17161,8 +17161,8 @@
         "y": 295
       },
       "offset": {
-        "x": 0,
-        "y": 0
+        "x": 1,
+        "y": -1
       }
     }
   },
@@ -21078,7 +21078,16 @@
       "latitude": 36.0355,
       "longitude": 136.0166
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 150,
+        "y": 250
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -21294,7 +21303,16 @@
       "latitude": 35.9066,
       "longitude": 136.6712
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 164,
+        "y": 254
+      },
+      "offset": {
+        "x": 0,
+        "y": 1
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -22065,7 +22083,16 @@
       "latitude": 36.8833,
       "longitude": 140.4199
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 240,
+        "y": 230
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -24106,7 +24133,16 @@
       "latitude": 44.0466,
       "longitude": 141.8611
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 269,
+        "y": 54
+      },
+      "offset": {
+        "x": 1,
+        "y": 1
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -24521,7 +24557,16 @@
       "latitude": 43.6225,
       "longitude": 142.6875
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 286,
+        "y": 64
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -25031,7 +25076,16 @@
       "latitude": 43.6722,
       "longitude": 143.3127
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 299,
+        "y": 63
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -25185,7 +25239,16 @@
       "latitude": 43.3827,
       "longitude": 145.288
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 339,
+        "y": 70
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -25332,7 +25395,16 @@
       "latitude": 43.0483,
       "longitude": 144.8538
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 330,
+        "y": 78
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -25375,7 +25447,16 @@
       "latitude": 43.1461,
       "longitude": 144.5016
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 323,
+        "y": 76
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -27788,7 +27869,16 @@
       "latitude": 43.53,
       "longitude": 141.5961
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 264,
+        "y": 66
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -28117,7 +28207,16 @@
       "latitude": 34.723,
       "longitude": 132.2797
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 74,
+        "y": 283
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -28134,7 +28233,16 @@
       "latitude": 34.7738,
       "longitude": 133.2833
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 95,
+        "y": 281
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -28151,7 +28259,16 @@
       "latitude": 34.6627,
       "longitude": 132.4102
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 77,
+        "y": 284
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -28168,7 +28285,16 @@
       "latitude": 34.7,
       "longitude": 133.0972
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 91,
+        "y": 283
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -28185,7 +28311,16 @@
       "latitude": 34.5997,
       "longitude": 132.7227
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 83,
+        "y": 286
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -28202,7 +28337,16 @@
       "latitude": 34.4894,
       "longitude": 132.2819
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 74,
+        "y": 288
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -28524,8 +28668,8 @@
     },
     "point": {
       "center_point": {
-        "x": 118,
-        "y": 260
+        "x": 119,
+        "y": 261
       },
       "offset": {
         "x": 0,
@@ -28591,7 +28735,16 @@
       "latitude": 35.455,
       "longitude": 134.5775
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 121,
+        "y": 265
+      },
+      "offset": {
+        "x": 0,
+        "y": 1
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -28634,7 +28787,16 @@
       "latitude": 35.3294,
       "longitude": 134.668
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 123,
+        "y": 268
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -28651,7 +28813,16 @@
       "latitude": 35.1605,
       "longitude": 134.5486
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 121,
+        "y": 272
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -28850,7 +29021,16 @@
       "latitude": 34.9483,
       "longitude": 135.2741
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 135,
+        "y": 277
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -29646,7 +29826,16 @@
       "latitude": 37.4969,
       "longitude": 137.1794
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 174,
+        "y": 215
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -29914,7 +30103,16 @@
       "latitude": 36.3544,
       "longitude": 136.6075
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 162,
+        "y": 243
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -29931,7 +30129,16 @@
       "latitude": 36.1774,
       "longitude": 136.6276
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 163,
+        "y": 247
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -31852,7 +32059,16 @@
       "latitude": 32.9286,
       "longitude": 131.1238
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 51,
+        "y": 327
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -31927,8 +32143,8 @@
         "y": 329
       },
       "offset": {
-        "x": 0,
-        "y": -1
+        "x": 1,
+        "y": 0
       }
     }
   },
@@ -32259,7 +32475,16 @@
       "latitude": 32.3602,
       "longitude": 130.183
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 32,
+        "y": 340
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -33081,7 +33306,16 @@
       "latitude": 33.3948,
       "longitude": 132.8987
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 87,
+        "y": 315
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -33098,7 +33332,16 @@
       "latitude": 33.1933,
       "longitude": 132.9783
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 89,
+        "y": 320
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -33219,7 +33462,16 @@
       "latitude": 33.7811,
       "longitude": 133.7324
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 104,
+        "y": 306
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -33558,8 +33810,8 @@
     },
     "point": {
       "center_point": {
-        "x": 149,
-        "y": 280
+        "x": 150,
+        "y": 281
       },
       "offset": {
         "x": 0,
@@ -34672,7 +34924,16 @@
       "latitude": 32.2319,
       "longitude": 131.1182
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 51,
+        "y": 344
+      },
+      "offset": {
+        "x": -1,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -34767,7 +35028,16 @@
       "latitude": 31.9916,
       "longitude": 131.258
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 54,
+        "y": 350
+      },
+      "offset": {
+        "x": 0,
+        "y": 1
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -34948,7 +35218,16 @@
       "latitude": 32.4972,
       "longitude": 131.4468
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 57,
+        "y": 337
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -34965,7 +35244,16 @@
       "latitude": 32.4516,
       "longitude": 131.1494
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 51,
+        "y": 338
+      },
+      "offset": {
+        "x": 1,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -35093,7 +35381,7 @@
       },
       "offset": {
         "x": 0,
-        "y": -1
+        "y": 0
       }
     }
   },
@@ -35115,11 +35403,11 @@
     "point": {
       "center_point": {
         "x": 149,
-        "y": 291
+        "y": 292
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": -1
       }
     }
   },
@@ -35140,12 +35428,12 @@
     },
     "point": {
       "center_point": {
-        "x": 144,
-        "y": 293
+        "x": 145,
+        "y": 295
       },
       "offset": {
         "x": 0,
-        "y": 1
+        "y": 0
       }
     }
   },
@@ -35193,7 +35481,7 @@
     "point": {
       "center_point": {
         "x": 145,
-        "y": 301
+        "y": 302
       },
       "offset": {
         "x": 0,
@@ -35977,7 +36265,16 @@
       "latitude": 32.9027,
       "longitude": 129.7825
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 24,
+        "y": 327
+      },
+      "offset": {
+        "x": 0,
+        "y": 1
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -35994,7 +36291,16 @@
       "latitude": 32.9197,
       "longitude": 130.1866
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 32,
+        "y": 327
+      },
+      "offset": {
+        "x": 1,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -36115,7 +36421,16 @@
       "latitude": 32.5777,
       "longitude": 129.7619
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 23,
+        "y": 335
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -36236,7 +36551,16 @@
       "latitude": 32.6308,
       "longitude": 128.6216
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 0,
+        "y": 334
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -37162,7 +37486,16 @@
       "latitude": 33.5633,
       "longitude": 131.7402
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 63,
+        "y": 311
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -37179,7 +37512,16 @@
       "latitude": 33.4516,
       "longitude": 131.1166
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 51,
+        "y": 314
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -37196,7 +37538,16 @@
       "latitude": 33.4211,
       "longitude": 131.3172
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 55,
+        "y": 315
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -37239,7 +37590,16 @@
       "latitude": 33.2522,
       "longitude": 131.0227
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 49,
+        "y": 319
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -37334,7 +37694,16 @@
       "latitude": 33.063,
       "longitude": 131.3758
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 56,
+        "y": 323
+      },
+      "offset": {
+        "x": 1,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -37403,7 +37772,16 @@
       "latitude": 32.9688,
       "longitude": 131.3994
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 57,
+        "y": 326
+      },
+      "offset": {
+        "x": 1,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -37446,7 +37824,16 @@
       "latitude": 32.8544,
       "longitude": 131.6611
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 62,
+        "y": 328
+      },
+      "offset": {
+        "x": 0,
+        "y": -1
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -37957,7 +38344,16 @@
       "latitude": 34.8669,
       "longitude": 133.9063
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 107,
+        "y": 279
+      },
+      "offset": {
+        "x": 1,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -38709,7 +39105,16 @@
       "latitude": 35.1969,
       "longitude": 135.9238
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 149,
+        "y": 271
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -38754,7 +39159,7 @@
     },
     "point": {
       "center_point": {
-        "x": 155,
+        "x": 156,
         "y": 274
       },
       "offset": {
@@ -38847,7 +39252,16 @@
       "latitude": 34.9011,
       "longitude": 136.2336
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 155,
+        "y": 278
+      },
+      "offset": {
+        "x": 0,
+        "y": 1
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -39219,7 +39633,16 @@
       "latitude": 35.5341,
       "longitude": 133.1638
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 92,
+        "y": 263
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -39392,7 +39815,16 @@
       "latitude": 34.8491,
       "longitude": 132.5333
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 80,
+        "y": 280
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -39584,12 +40016,12 @@
     },
     "point": {
       "center_point": {
-        "x": 66,
-        "y": 287
+        "x": 85,
+        "y": 271
       },
       "offset": {
-        "x": 0,
-        "y": 0
+        "x": -1,
+        "y": 1
       }
     }
   },
@@ -40890,7 +41322,16 @@
       "latitude": 33.8683,
       "longitude": 134.6066
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 122,
+        "y": 304
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -40933,7 +41374,16 @@
       "latitude": 33.8755,
       "longitude": 134.3916
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 117,
+        "y": 303
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -41002,7 +41452,16 @@
       "latitude": 33.9311,
       "longitude": 134.2147
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 114,
+        "y": 302
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -41019,7 +41478,16 @@
       "latitude": 33.7686,
       "longitude": 134.2022
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 113,
+        "y": 306
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -41950,7 +42418,16 @@
       "latitude": 35.1676,
       "longitude": 133.3139
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 95,
+        "y": 272
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -42129,7 +42606,7 @@
         "y": 235
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -42177,11 +42654,11 @@
     },
     "point": {
       "center_point": {
-        "x": 95,
-        "y": 272
+        "x": 173,
+        "y": 237
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -42253,7 +42730,16 @@
       "latitude": 36.438,
       "longitude": 137.0383
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 171,
+        "y": 241
+      },
+      "offset": {
+        "x": 0,
+        "y": 1
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -42608,7 +43094,16 @@
       "latitude": 33.7019,
       "longitude": 135.6425
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 143,
+        "y": 308
+      },
+      "offset": {
+        "x": 1,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -42677,7 +43172,16 @@
       "latitude": 34.3797,
       "longitude": 131.6027
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 61,
+        "y": 291
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -42832,7 +43336,16 @@
       "latitude": 34.2272,
       "longitude": 131.9847
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 68,
+        "y": 295
+      },
+      "offset": {
+        "x": -1,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -43057,7 +43570,16 @@
       "latitude": 33.8422,
       "longitude": 132.1229
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 71,
+        "y": 303
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
