@@ -1879,11 +1879,11 @@
     },
     "point": {
       "center_point": {
-        "x": 233,
+        "x": 232,
         "y": 256
       },
       "offset": {
-        "x": -1,
+        "x": 0,
         "y": 0
       }
     }
@@ -6356,7 +6356,7 @@
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": -1
       }
     }
   },
@@ -11758,11 +11758,11 @@
     },
     "point": {
       "center_point": {
-        "x": 24,
+        "x": 25,
         "y": 332
       },
       "offset": {
-        "x": 0,
+        "x": -1,
         "y": 0
       }
     }
@@ -13890,11 +13890,11 @@
     },
     "point": {
       "center_point": {
-        "x": 218,
-        "y": 255
+        "x": 219,
+        "y": 254
       },
       "offset": {
-        "x": 1,
+        "x": 0,
         "y": -1
       }
     }
@@ -16335,11 +16335,11 @@
     "point": {
       "center_point": {
         "x": 221,
-        "y": 259
+        "y": 260
       },
       "offset": {
         "x": 0,
-        "y": 1
+        "y": 0
       }
     }
   },
@@ -16361,7 +16361,7 @@
     "point": {
       "center_point": {
         "x": 228,
-        "y": 260
+        "y": 261
       },
       "offset": {
         "x": 0,
@@ -19955,11 +19955,11 @@
     },
     "point": {
       "center_point": {
-        "x": 235,
+        "x": 233,
         "y": 256
       },
       "offset": {
-        "x": 0,
+        "x": 1,
         "y": 0
       }
     }
@@ -25111,7 +25111,16 @@
       "latitude": 44.1036,
       "longitude": 145.2519
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 338,
+        "y": 52
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -26623,7 +26632,16 @@
       "latitude": 42.5725,
       "longitude": 141.9316
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 271,
+        "y": 90
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -29965,7 +29983,16 @@
       "latitude": 37.1572,
       "longitude": 136.6927
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 164,
+        "y": 223
+      },
+      "offset": {
+        "x": -1,
+        "y": 0
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -41714,12 +41741,12 @@
     },
     "point": {
       "center_point": {
-        "x": 223,
-        "y": 258
+        "x": 221,
+        "y": 259
       },
       "offset": {
         "x": 0,
-        "y": 0
+        "y": -1
       }
     }
   },
@@ -41905,7 +41932,7 @@
     "point": {
       "center_point": {
         "x": 227,
-        "y": 259
+        "y": 260
       },
       "offset": {
         "x": 0,
@@ -42064,7 +42091,16 @@
       "latitude": 35.7222,
       "longitude": 139.8281
     },
-    "point": null
+    "point": {
+      "center_point": {
+        "x": 228,
+        "y": 259
+      },
+      "offset": {
+        "x": -1,
+        "y": -1
+      }
+    }
   },
   {
     "type": "k_NET",
@@ -44230,7 +44266,7 @@
     },
     "point": {
       "center_point": {
-        "x": 235,
+        "x": 234,
         "y": 205
       },
       "offset": {
