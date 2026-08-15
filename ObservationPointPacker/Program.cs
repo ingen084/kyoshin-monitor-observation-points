@@ -1,77 +1,33 @@
-﻿using System.Text.Encodings.Web;
-using System.Text.Json;
-using System.Text.Json.Serialization;
-using System.Text.Unicode;
-using ObservationPointPacker;
-using ObservationPointPacker.Models;
+using ObservationPointPacker.Commands;
 
 // コマンドライン引数を解析
-if (args.Length < 2)
+if (args.Length < 1)
 {
-    Console.WriteLine("使用方法: ObservationPointPacker <dataVersion> <outputDir>");
-    Console.WriteLine("  dataVersion: データバージョン (例: v1.0.0)");
-    Console.WriteLine("  outputDir: 出力先ディレクトリ");
+    ShowUsage();
     return 1;
 }
 
-var dataVersion = args[0];
-var outputDir = args[1];
-
-// 出力ディレクトリを作成
-Directory.CreateDirectory(outputDir);
-
-// intensity-points.jsonを読み込み
-Console.WriteLine("intensity-points.jsonを読み込んでいます...");
-using var stream = File.OpenRead("intensity-points.json");
-var points = await JsonSerializer.DeserializeAsync<CommonObservationPoint[]>(stream, new JsonSerializerOptions
+switch (args[0])
 {
-		PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower,
-		PropertyNameCaseInsensitive = true,
-		Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase) },
-		Encoder = JavaScriptEncoder.Create(UnicodeRanges.All),
-		WriteIndented = true
-}) ?? throw new InvalidOperationException("データの読み込みに失敗しました");
+    case "pack":
+        return await PackCommand.RunAsync(args[1..]);
 
-// V1形式に変換
-var v1Points = points.Select(p => p.ToV1()).ToArray();
+    case "diff":
+        return await DiffCommand.RunAsync(args[1..]);
 
-// V2形式に変換 (休止中または画像座標なしの観測点は除外)
-var v2Points = points
-    .Where(p => !p.IsSuspended && p.Point is not null)
-    .Select(p => p.ToV2())
-    .ToArray();
-Console.WriteLine($"  {points.Length}件中 {v2Points.Length}件をパッケージに含めます (除外: 休止中または画像座標なし)");
-
-var packedAt = DateTime.UtcNow;
-
-// V1形式の出力
-Console.WriteLine("V1形式で出力しています...");
-ObservationPointV1.SaveToMpk(Path.Combine(outputDir, "intensity-points-v1.mpk"), v1Points, useLz4: false);
-ObservationPointV1.SaveToMpk(Path.Combine(outputDir, "intensity-points-v1.mpk.lz4"), v1Points, useLz4: true);
-ObservationPointV1.SaveToJson(Path.Combine(outputDir, "intensity-points-v1.json"), v1Points);
-ObservationPointV1.SaveToCsv(Path.Combine(outputDir, "intensity-points-v1.csv"), v1Points);
-
-// V2形式の出力 (KMOP形式)
-Console.WriteLine("V2形式 (KMOP) で出力しています...");
-var v2Header = new ObservationPointsFileHeader
-{
-    Version = 0,
-    DataVersion = dataVersion,
-    PackedAt = packedAt,
-    Source = "https://github.com/ingen084/kyoshin-monitor-observation-points",
-    CompressionMode = ObservationPointsCompressionMode.MessagePackCSharpLz4BlockArray
-};
-
-using (var kmopStream = File.Create(Path.Combine(outputDir, "intensity-points-v2.kmop")))
-{
-    using var writer = new ObservationPointsFileReader(kmopStream);
-    await writer.WriteHeader(v2Header);
-    await writer.WriteData(v2Points, v2Header.CompressionMode);
+    default:
+        Console.Error.WriteLine($"不明なコマンドです: {args[0]}");
+        ShowUsage();
+        return 1;
 }
 
-// 元のJSONファイルもコピー
-Console.WriteLine("元のJSONファイルをコピーしています...");
-File.Copy("intensity-points.json", Path.Combine(outputDir, "intensity-points.json"), overwrite: true);
-
-Console.WriteLine($"パッケージング完了: {outputDir}");
-return 0;
+static void ShowUsage()
+{
+    Console.WriteLine("使用方法: ObservationPointPacker <command> [arguments]");
+    Console.WriteLine();
+    Console.WriteLine("コマンド:");
+    Console.WriteLine("  pack <dataVersion> <outputDir>");
+    Console.WriteLine("      観測点データをリリース用の各形式に変換して出力します");
+    Console.WriteLine("  diff <beforeJson> <afterJson> <outputPath> [beforeRef] [afterRef]");
+    Console.WriteLine("      観測点データの差分を Markdown で出力します");
+}

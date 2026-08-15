@@ -33,7 +33,7 @@ jobs:
 
       - name: Package observation points
         run: |
-          dotnet run --project ObservationPointPacker/ObservationPointPacker.csproj --no-build --configuration Release -- ${{ github.ref_name }} ./release-output
+          dotnet run --project ObservationPointPacker/ObservationPointPacker.csproj --no-build --configuration Release -- pack ${{ github.ref_name }} ./release-output
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2

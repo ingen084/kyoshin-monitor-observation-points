@@ -16,8 +16,11 @@ The primary asset is [intensity-points.json](intensity-points.json), which conta
 # Build the solution
 dotnet build
 
-# Run the main application
-dotnet run --project ObservationPointPacker/ObservationPointPacker.csproj
+# Package observation points for release
+dotnet run --project ObservationPointPacker/ObservationPointPacker.csproj -- pack v1.0.0 ./release-output
+
+# Generate a PR comment showing the difference between two data files
+dotnet run --project ObservationPointPacker/ObservationPointPacker.csproj -- diff before.json after.json comment.md
 
 # Run all tests
 dotnet test
@@ -34,10 +37,18 @@ dotnet test --filter "FullyQualifiedName~KyoshinImagePointFormatterTests"
 - [intensity-points.json](intensity-points.json): The canonical source of observation point data
 - [ObservationPointPacker/](ObservationPointPacker/): Release preparation tool for converting JSON to compressed formats
 - [ObservationPointPacker.Tests/](ObservationPointPacker.Tests/): Tests for the packer utility
+- [.github/workflows/](.github/workflows/): CI workflows (tests, release, and the observation point diff comment on PRs)
 
 ## Packer Architecture
 
 The ObservationPointPacker is used during releases to package observation data.
+
+### Commands
+
+The tool takes a subcommand as its first argument:
+
+- `pack <dataVersion> <outputDir>`: Converts the JSON data into the release artifacts. Used by [release.yml](.github/workflows/release.yml)
+- `diff <beforeJson> <afterJson> <outputPath> [beforeRef] [afterRef]`: Compares two data files and writes a Markdown table intended for a PR comment. Used by [observation-points-diff.yml](.github/workflows/observation-points-diff.yml)
 
 ### Data Flow
 
@@ -74,6 +85,9 @@ The `ISerializableObservationPoint<T>` interface defines CSV serialization contr
 
 **Future-Proof Deserialization:**
 Both custom formatters skip extra array elements during deserialization to support forward compatibility if fields are added later.
+
+**Diff Field Definitions:**
+The diff compares the *formatted string* of each field ([ObservationPointDisplay.cs](ObservationPointPacker/Diff/ObservationPointDisplay.cs)) instead of the raw values, so the table always shows exactly what was detected as a change. When a property is added to `CommonObservationPoint`, it must also be added to `ObservationPointDiffer.Fields`, otherwise changes to it are not reported.
 
 ## Testing
 
